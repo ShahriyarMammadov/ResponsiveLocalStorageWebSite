@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rental</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <h1>Rental</h1>
+    </div>
+    <div class="icon">
+      <i id="menuBars" class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="left">
+      <header>
+        <h2>Rental</h2>
+        <h2> from $99</h2>
+        <p>per night</p>
+      </header>
+
+      <div class="check">
+        <div class="checkIn">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Check In</span><br>
+          <input type="text" id="checkIn" maxlength="10" placeholder="DD-MM-YYYY">
+          <div class="alertIn">
+
+          </div>
+        </div>
+        <div class="checkOut">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Check Out</span>
+          <input type="text" id="checkOut" maxlength="10" placeholder="DD-MM-YYYY">
+          <div class="alertOut">
+
+          </div>
+        </div>
+        <div class="adults">
+          <i class="fa-sharp fa-solid fa-person"></i>
+          <span>Adults</span><br>
+          <input type="number" value="1" min="1" max="25" id="adults">
+        </div>
+        <div class="kids">
+          <i class="fa-solid fa-child-reaching"></i>
+          <span>Kids</span><br>
+          <input type="number" value="0" min="0" max="25" id="kids">
+        </div>
+        <button id="searchLeftBtn"><i class="fa-solid fa-magnifying-glass"></i> Search availability</button>
+      </div>
+
+      <footer>
+        <div>
+          <i class="fa-solid fa-building"></i>
+          <a href="#top">Apartment</a>
+        </div>
+        <div class="footer">
+          <i class="fa-solid fa-wifi"></i>
+          <a href="#ateqi" id="subsLeftBtn">Subscribe</a>
+        </div>
+        <div class="footer">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#subscribe">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <div class="right">
+      <header>
+        <h2>The Apartment</h2>
+      </header>
+
+      <div class="sideImg" id="top">
+        <div class="textImg">
+          <p id="imgText">Living Room</p>
+        </div>
+        <img src="./assets/images/3.jpg" class="Living Room" id="srcImg" alt="">
+      </div>
+
+      <div class="images">
+        <img src="./assets/images/3.jpg" class="Living Room" id="two" alt="">
+        <img src="./assets/images/2.jpg" class="Dining Room" id="three" alt="">
+        <img src="./assets/images/1.jpg" class="Bedroom" id="four" alt="">
+        <img src="./assets/images/4.jpg" class="Living Room ||" id="five" alt="">
+      </div>
+
+      <div class="textContent">
+        <h4>The Space</h4>
+      </div>
+
+      <div class="people">
+        <div class="first">
+          <p><i class="fa-sharp fa-solid fa-person"></i> Max people: 4</p>
+          <p><i class="fa-solid fa-bath"></i> Bathrooms: 2</p>
+          <p><i class="fa-solid fa-bed"></i> Bedrooms: 1</p>
+        </div>
+        <div class="second">
+          <p><i class="fa-regular fa-clock"></i> Check in: After 3PM</p>
+          <p><i class="fa-regular fa-clock"></i> Check Out: 12PM</p>
+        </div>
+      </div>
+
+      <div class="textContent"  id="ateqi">
+        <h4>Amenities</h4>
+      </div>
+
+      <div class="people">
+        <div class="first">
+          <p><i class="fa-solid fa-shower"></i> Shower</p>
+          <p><i class="fa-solid fa-wifi"></i> WIFI</p>
+          <p><i class="fa-solid fa-tv"></i> TV</p>
+        </div>
+        <div class="second">
+          <p><i class="fa-solid fa-utensils"></i> Kitchen</p>
+          <p><i class="fa-solid fa-temperature-three-quarters"></i> Heating</p>
+          <p><i class="fa-solid fa-wheelchair"></i> Accessible</p>
+        </div>
+      </div>
+
+      <div class="textContent">
+        <h4>Extra Info</h4>
+      </div>
+
+      <div class="loremText">
+        <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <span>We accept</span>
+        <i class="fa-regular fa-credit-card"> </i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+      </div>
+
+      <div class="textContent">
+        <h4>Rules</h4>
+      </div>
+
+      <div class="loremText">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <p>Subscribe to receive updates on available dates and special offers.</p>
+
+        <button id="subscribe">Subscribe</button>
+      </div>
+
+      <div class="textContent">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact">
+        <p><i class="fa-sharp fa-solid fa-location-dot"></i> Chicago. US</p>
+        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+        <p>Questions? Go ahead. ask them:</p>
+      </div class="contact">
+
+      <div class="inputs">
+        <div>
+          <input type="text" placeholder="Name" id="name" maxlength="30"> <br>
+          <div class="nameAlert">
+
+          </div>
+        </div>
+        <div>
+          <input type="email" placeholder="Email" id="email"><br>
+          <div class="emailAlert">
+
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="Message" id="message"><br>
+          <div class="messageAlert">
+
+          </div>
+        </div>
+
+        <button id="sendMessage">Send a Message</button>
+
+      </div>
+
+      <footer>
+        <p>Powered by Shahriyar</p>
+      </footer>
+    </div>
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>SUBSCRIBE</h2>
+      <p>Join our mailing list to receive updates on available dates and special offers</p>
+      <input type="email" placeholder="Enter e-mail" id="modalInput"><br>
+      <div class="modalAlert">
+
+      </div>
+      <div class="btns">
+        <button id="modalSubscribe">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

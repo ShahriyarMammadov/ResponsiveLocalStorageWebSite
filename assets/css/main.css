@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 17%;
+}
+
+.modal-content .btns button, .container .right .inputs button, .container .right .loremText button, .container .left button {
+  width: 210px;
+  height: 40px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.modal-content .btns button:hover, .container .right .inputs button:hover, .container .right .loremText button:hover, .container .left button:hover {
+  background-color: darkgrey;
+  color: black;
+}
+
+.container .left input {
+  padding: 5%;
+  margin-top: 8%;
+  margin-bottom: 12%;
+  width: 90%;
+  border: none;
+}
+.container .left input::-moz-placeholder {
+  font-size: 16px;
+}
+.container .left input:-ms-input-placeholder {
+  font-size: 16px;
+}
+.container .left input::placeholder {
+  font-size: 16px;
+}
+.container .left input:focus {
+  outline: none;
+}
+
+.header {
+  color: white;
+  background-color: black;
+  width: 100%;
+  display: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.header .logo {
+  padding: 0 5%;
+}
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.header .icon {
+  padding: 0 5%;
+}
+.header .icon i {
+  cursor: pointer;
+  font-size: 24px;
+}
+@media only screen and (max-width: 990px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  display: flex;
+}
+@media only screen and (max-width: 990px) {
+  .container {
+    padding: 0;
+  }
+}
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container .left {
+  border-left: 1px solid black;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+  padding: 10px 20px 0 20px;
+  padding-bottom: 1%;
+}
+@media only screen and (max-width: 990px) {
+  .container .left {
+    display: none;
+  }
+}
+.container .left button {
+  margin-bottom: 50px;
+}
+.container .left header h2 {
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.container .left header p {
+  margin-top: 15px;
+}
+.container .left .check {
+  width: 100%;
+  margin-top: 35px;
+}
+.container .left .check .checkIn {
+  width: 100%;
+}
+.container .left .check .checkIn i {
+  font-size: 20px;
+}
+.container .left .check .checkIn p {
+  color: red;
+  margin-top: -20px;
+}
+.container .left .check .checkOut p {
+  color: red;
+  margin-top: -20px;
+}
+.container .left footer {
+  width: 100%;
+}
+.container .left footer div {
+  padding: 8% 2%;
+}
+.container .left footer div:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+.container .left footer div i {
+  width: 10%;
+}
+.container .right {
+  width: 100%;
+  margin-left: 34%;
+  padding: 0 2%;
+  border-right: 1px solid black;
+}
+@media only screen and (max-width: 990px) {
+  .container .right {
+    margin-left: 0px !important;
+    width: 100%;
+    border: none;
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .container .right {
+    margin-left: 48%;
+  }
+}
+.container .right header h2 {
+  color: #4caf50;
+  font-size: 30px;
+  font-weight: 400;
+}
+.container .right .sideImg {
+  position: relative;
+}
+.container .right .sideImg img {
+  width: 100%;
+}
+.container .right .sideImg .textImg {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 12px;
+}
+.container .right .sideImg p {
+  margin: 15px;
+}
+.container .right .inputs p {
+  color: red;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.container .right .images {
+  margin-top: 1%;
+  display: flex;
+  gap: 4%;
+}
+.container .right .images #two {
+  opacity: 1;
+}
+.container .right .images img {
+  width: 22%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.container .right .images img:hover {
+  opacity: 1;
+}
+.container .right .people {
+  display: flex;
+  gap: 30%;
+}
+@media only screen and (max-width: 990px) {
+  .container .right .people {
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .container .right .people {
+    gap: 0;
+  }
+}
+.container .right .people p {
+  width: 220px;
+}
+@media only screen and (max-width: 990px) {
+  .container .right .people p {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 1373px) {
+  .container .right .people p {
+    width: 180px;
+  }
+}
+.container .right .inputs input {
+  font-size: 16px;
+  width: 95%;
+  margin: 8px 0;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+@media only screen and (max-width: 990px) {
+  .container .right .inputs input {
+    width: 92%;
+  }
+}
+.container .right .inputs button {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.container .right .contact p i,
+.container .right .people p i {
+  width: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content h2 {
+  text-align: center;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+.modal-content p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+.modal-content input {
+  margin-left: 12%;
+  font-size: 20px;
+  padding: 1% 1%;
+  width: 70%;
+}
+.modal-content .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content .btns button {
+  margin-top: 20px;
+}
+.modal-content .modalAlert p {
+  color: red;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.block {
+  display: block !important;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */
